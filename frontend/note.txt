@@ -1,0 +1,16 @@
+0% {
+        transform: rotate(10deg) translateX(20px) translateY(-25px);
+    }
+    16% {
+        transform: rotate(45deg) translateX(60px) translateY(5px);
+        color: var(--pumpkin);
+    }
+    32% {
+        transform: rotate(100deg) translateX(5px) translateY(5px);
+        color: var(--pumpkin);
+    }
+    48% {
+        transform: rotate(90deg) translateX(15px) translateY(-25px);
+
+        color: var(--choclit-brwon);
+    }

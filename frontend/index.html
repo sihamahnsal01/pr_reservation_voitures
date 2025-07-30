@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="5s">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="style.css">
+    <title>VroomBook</title>
+</head>
+<body>
+        <div class="header">
+           <div class="head row">
+                <div class="logo col-4">
+                     <h1>VroomBook</h1>
+                </div>
+                <div class="menu  col-4">
+                     <ul>
+                          <li><a href="index.html">Accueil</a></li>
+                          <li><a href="index.html">Services</a> </li>
+                       <!-- <ul class="ulmenu">
+                            <li><a href="">Voitures neuves</a></li>
+                            <li><a href="">Voitures d'occasion</a></li>
+                            <li><a href="">Disponibles</a></li>
+                        </ul>-->
+                       
+                          <li><a href="index.html">Contact</a></li>
+                          <li><a href="index.html">A propos</a></li> 
+                </ul>
+                </div>
+                <div class="Book col-4">
+                    <button type="submit" id="btnReservez"> <a href="reser.html">Réservez maintenant</a><i class="fa-solid fa-paper-plane "></i></button>
+                </div>
+           </div>
+           <div class="container mini_form">
+            <h3>Besoin de louer une voiture de luxe ?
+                <br>
+            <span >Envoyer une demande</span></h3>
+            <p>"Remplissez le formulaire ci-dessous et nous vous contacterons dans les plus brefs délais"</p>
+            <br>
+            <form action="" class="row" id="demandeForm" method="post">
+               <div class="col">
+                 <input type="text" name="Pickup_local" placeholder="Pickup Location" id="Pickup_local" required>
+                 <i class="fa-solid fa-location-dot"></i>
+               </div>
+               <div class="col">
+                 <input type="date" name="date" id="date">
+               </div>
+               <div class="col">
+                 <input type="time" name="time" id="time">
+               </div>
+               <div class="col">
+                 <input type="text" name="Drop_Off_local" placeholder="Drop-Off Location" id="Drop_Off_local" required>
+                 <i class="fa-solid fa-location-dot"></i>
+               </div>
+               <button class="col" type="submit">Envoyer une demande</button>
+             </form>
+       </div>    
+        </div>
+        <div class="brand">
+            <div class="row ">
+                <div class="col">
+                    <img src="img/jeep.png" alt="">
+                    <p>Jeep</p>
+                </div>
+                <div class="col">
+                    <img src="img/sedan.png" alt="">
+                    <p>Sedan</p>
+                </div>
+                <div class="col">
+                    <img src="img/sport-car.png" alt="">
+                    <p>Sport car</p>
+                </div>
+                <div class="col">
+                    <img src="img/suv.png" alt="">
+                    <p>SUV</p>
+                </div>
+                <div class="col">
+                    <img src="img/van.png" alt="">
+                    <p>Mini Van</p>
+                </div>
+                <div class="col">
+                    <img src="img/cabriolet.png" alt="">
+                    <P>Coupe</P>
+                </div>
+                
+            </div>
+        </div>
+        <div class="container">
+        <div class="content-cars">
+                   <section class="cars-manu"><ul>
+                    <li data-name="tous" class="active">Tous</li>
+                    <li data-name="dispo">Disponibles</li>
+                    <li data-name="voituresNeuves">Voitures neuves</li>
+                    <li data-name="VoituresD_occasion">Voitures d'occasion</li></ul>
+                    <div>
+                    <input type="search" name="searchVoitures" id="searchVoitureN" placeholder="search"><i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                    </div>
+                   </section>
+                   <section class="cars-card row">
+                        <div class="card " data-name="dispo" >
+                            <div class="img">
+                            <img src="img/MercedesBenz_ClasseG.jpg" alt="Mercedes Benz Classe G"></div>
+                            <div class="infocar">
+                                <h5>Mercedes-Benz Classe G AMG <span>Environ 1000€ / jour</span></h5> 
+                                
+                                <p>Automatic / 45000 Kms</p>
+                                <p>ABS Brakes / Petrol</p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                            
+                        </div>
+                        </div>
+                        <div class="card " data-name="dispo">
+                            <div class="img">
+                            <img src="img/BMW 520d xDrive Touring M Sport G61 2024.jpg" alt=""></div>
+                            <div class="infocar">
+                                <h5>BMW 5 Series 520D <span>450€ / jour</span></h5>
+                                <p>Automatique / 110000 km</p>
+                                <p>BS Brake / Diesel </p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card " data-name="VoituresD_occasion ">
+                            <div class="img">
+                            <img src="img/AudiA6.jpg" alt="Audi A6"></div>
+                            <div class="infocar">
+                                <h5>Audi A6 2013 <span>450€ / jour</span></h5>
+                                <p>Automatique / 187972 km</p>
+                                <p>BS Brake / Diesel</p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card " data-name="voituresNeuves">
+                            <div class="img">
+                            <img src="img/Mercedes-AMG.CLE53Coupe_A02.jpg" alt="Mercedes AMG.CLE53Coupe A02"></div>
+                            <div class="infocar">
+                                <h5>Mercedes-Benz CLE 220D AMG 2025 <span>Sur demande</span></h5>
+                                <p>Automatique / 0 Kms </p>
+                                <p>BS Brake / Diesel </p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card " data-name="voituresNeuves">
+                            <div class="img">
+                            <img src="img/MercedesBenz_AMG-GLC43.jpg" alt="Mercedes Benz AMG-GLC43"></div>
+                            <div class="infocar">
+                                <h5>Mercedes-Benz GLC 300de <span>Sur demande</span></h5>
+                                <p>Automatique / 0 Kms</p>
+                                <p>BS Brake / Hybride</p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card " data-name="VoituresD_occasion">
+                            <div class="img">
+                            <img src="img/Porsche911.jpg" alt="/Porsche 911"></div>
+                            <div class="infocar">
+                                <h5>Porsche 911 Carrera Facelift 2024 <span>Sur demande</span></h5>
+                                <p>Automatique / 0 Kms</p>
+                                <p>BS Brake / Essence</p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card" data-name="dispo">
+                            <div class="img">
+                            <img src="img/Alfa-Romeo-Stelvio.jpg" alt="Alfa Romeo Stelvio"></div>
+                            <div class="infocar">
+                                <h5>Alfa Romeo Stelvio <span>235$ /jour</span></h5>
+                                <p>Automatique / 93000 km </p>
+                                <p>BS Brake / Diesel </p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <div class="card" data-name="VoituresD_occasion">
+                            <div class="img">
+                            <img src="img/Lexus-LS-Series.jpg" alt="Lexus LS Series"></div>
+                            <div class="infocar">
+                                <h5>Lexus LS Series 2019 <span>500$ /jour</span></h5>
+                                <p>Hybride / 52664 km </p>
+                                <p>BS Brake / Hybride </p>
+                                <div class="details"><a href="carsDétails.html">Détails</a></div>
+                        </div>
+                        </div>
+                        <p id="erorSearch"></p>
+                   </section>
+                   <section class="explorCars">
+                    <pre>Explorez notre flotte premium</pre>
+                    <p>MARCHES DE VOITURES TOP disponibles pour vous</p>
+                    <div class="brands row">
+                        <div class="col" ><img src="img/Untitled design/1.png"></div>
+                        <div class="col" ><img src="img/Untitled design/2.png"></div>
+                        <div class="col" ><img src="img/Untitled design/3.png"></div>
+                        <div class="col" ><img src="img/Untitled design/4.png"></div>
+                       
+                    </div>
+
+
+                   </section>
+                   <section class="full-width-wrapper">
+                    <p>Conduisez le confort, ressentez la joie<p>
+                        <div class="flish">
+    <span id="leftFa"><i class="fa-solid fa-arrow-left "></i></span> 
+     </div>
+       <div class="someDetail">
+            <div class="theDetails">
+<div class="CarImg">
+<p>B M W</p>
+<img src="img/carBMW-3.png" alt=""><br>
+<span><a class="plus" href="">Voir plus</a></span>
+</div>
+<P>Les voitures BMW sont connues pour leur qualité de construction premium, leurs performances sportives et leur technologie de pointe.
+    Ils offrent une large gamme de modèles des berlines aux VUS, avec des groupes motopropulseurs à essence, diesel, hybride et entièrement électriques.</P>
+    <p><a href="">Afficher les détails</a></p>
+
+<div class="more">
+    <span>350 km <br>
+    Range Upto</span>
+    <span>400 Kw <br> Power Upto</span>
+    <span>13500 Lbs <br>Towing Upto</span>
+</div>
+        </div>
+            <div class="theDetails">
+    <div class="CarImg">
+    <p>E-TRONO</p>
+    <img src="img/carE-TRONO-GT-1.png" alt=""><br>
+    <span><a class="plus" href="">Voir plus</a></span>
+    </div>
+    <P>E-tron fait la base de la vision «Vorsprung Durch Technik» d'Audi (progrès à travers la technologie) pour un avenir durable.</P>
+        <p><a href="">Afficher les détails</a></p>
+    
+    <div class="more">
+        <span>350 km <br>
+        Range Upto</span>
+        <span>400 Kw <br> Power Upto</span>
+        <span>13500 Lbs Towing Upto</span>
+    </div>
+        </div>
+            <div class="theDetails">
+        <div class="CarImg">
+        <p>S E D A N</p>
+        <img src="img/carSEDAN-2.png" alt=""><br>
+        <span><a class="plus" href="">Voir plus</a></span>
+        </div>
+        <P>Ils offrent généralement un meilleur confort de conduite, une efficacité énergétique et une cabine plus calme par rapport aux VUS.
+            Populaires parmi les familles et les navetteurs, les berlines vont des modèles compacts au luxe et aux performances sportives.</P>
+            <p><a href="">Afficher les détails</a></p>
+        
+        <div class="more">
+            <span>350 km <br>
+            Range Upto</span>
+            <span>400 Kw <br> Power Upto</span>
+            <span>13500 Lbs Towing Upto</span>
+        </div>
+        </div>
+       </div>
+           <div class="flish">
+    <span id="rightFa"><i class="fa-solid fa-arrow-right"></i></span>
+     </div>
+    </section>
+       <section class="QTpopuler">
+        <div class="imgNp">
+        <span><pre>+212 598 459 001</pre>
+        </span></div>
+        <div class="qTall">
+            <h4>Vivre l'excellence à chaque mile du chemin :</h4>
+            <div class="gt">
+                <label class="IunderAbove">1- Une flotte haut de gamme de voitures prestigieuses ! <i class="fa-solid fa-caret-down"></i></label>
+                <p>Découvrez notre sélection exclusive de véhicules de luxe — BMW, Mercedes-Benz et bien d’autres — alliant confort, élégance et performance.</p>
+            </div><hr>
+            <div class="gt">
+                <label class="IunderAbove">2- Des tarifs compétitifs et transparents !
+                    <i class="fa-solid fa-caret-down"></i> </label>
+                <p>Profitez de prix justes, sans frais cachés, pour une expérience de location sereine et parfaitement maîtrisée.</p>
+            </div><hr>
+            <div class="gt">
+                <label class="IunderAbove">3- Service personnalisé & assistance 24h/24 ! <i class="fa-solid fa-caret-down"></i>
+                    </label>
+                <p>Accueil à l’aéroport, livraison sur mesure... notre équipe locale reste disponible à tout moment, où que vous soyez au Maroc.</p>
+            </div><hr>
+            <div class="gt">
+                <label class="IunderAbove">4- Véhicules impeccables et entièrement assurés ! <i class="fa-solid fa-caret-down"></i>
+                    </label>
+                <p>Chaque voiture est soigneusement entretenue, nettoyée et assurée pour garantir votre confort et votre sécurit</p>
+            </div><hr>
+            <div class="gt">
+                <label class="IunderAbove">5- La confiance des clients locaux et internationaux ! <i class="fa-solid fa-caret-down"></i>
+                    </label>
+                <p>Recommandés par des centaines de clients satisfaits, nous sommes le choix idéal pour vos déplacements à Marrakech, Casablanca et dans tout le pays.</p>
+            </div>
+            
+        </div>
+
+       </section>
+       
+<section class="review">
+    <pre>Que disent les clients de nous?</pre>
+    <p>Nos avis sur les clients</p>
+    <div class="row">
+
+    </div>
+        </section>
+    <section id="addCR">
+        <form method="get">
+             <div class="row">
+        <span class="col">
+          <input class="form-control" id="inputName" type="text" placeholder="Votre name" />
+        </span>
+        <span class="col">
+          <input class="form-control" id="inputEmail" type="email" placeholder="Votre email" />
+        </span>
+      </div>
+   <div>
+        <textarea class="form-control" name="msReveiw" id="msReveiw" placeholder="Votre review"></textarea>
+      </div>
+        <button id="sendReview" type="submit"  >Envoyer</button>
+        </form>
+
+        </section>
+
+       <section class="urKey">
+<img src="img/Screenshot1.png" alt="" >
+<div>
+  <label>Prenez les clés de votre <br>
+aventure Louez</label><br>
+<button >Réserver un créneau</button>  
+</div>
+       </section>
+    </div>
+
+<div class="GetCall row" >
+<img src="img/Alfa-Romeo-Stelvio.jpg" class="col-5">
+<section class="col-7">
+<pre>Not Sure About Something?</pre>
+<p>Get a Call Back From Us.</p>
+<form action="" method="post" >
+    <div class="row">
+    <div class="form-group col"> 
+        <label for="FirstN">First Name</label>
+        <input type="text" id="FirstN" required>
+    </div>
+        <div class="form-group col"> 
+            <label for="LastN">Last Name</label>
+        <input type="text" id="LastN" required>
+        </div></div>
+        <div class="row">
+    <div class="form-group col-6"> 
+        <label for="phone">Phone number</label>
+        <input type="text" id="phone" required>
+    </div>
+        <div class="form-group col-6"> 
+            <label for="email">Email</label>
+        <input type="text"  id="email" required>
+        </div></div>
+    <div> <label for="urMs">Your message</label>
+        <textarea name="urMs" id="urMs" required></textarea></div>
+    <button type="submit">Envoyer</button>
+</form>
+
+</section>
+</div>
+    </div>
+
+<footer class="row">
+    <section class="col-6">
+            <h2>VroomBook</h2>
+            <P>Découvrez la liberté d'explorer Marrakech Al Hamra grace à note service de location de voitures de confiance.</P>
+            <input type="button" value="savoir plus">
+<div class="divNewsLetter">
+    <label for="newsLetter">Lettre d'information</label>
+    <br><span>
+    <input type="email" name="newsLetter" id="newsLetter" placeholder="Votre Email">
+    <input type="submit" value="submit">
+</span>
+</div>
+    </section>
+    <section class="col-6">
+        <section class="row">
+        <div class="col">
+            <label >Address</label>
+            <p> Jamaa el-Fana Squara, Medina marrakech 400000</p>
+        </div>
+        <div class="col">
+             <label>Contact</label>
+            <p>+212 6 45 78 23 19</p>
+            <p>info.marrakechcars@gmail.com</p>
+        </div>
+        <div class="col"> 
+            <label> Abonner vous</label><br>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            
+        </div></section>
+<pre>2025--Copyright</pre>
+    </section>
+</footer>
+
+<script src="action.js"></script>
+</body>
+</html>
