@@ -11,7 +11,7 @@ To run the project locally, go to:
 
 - Car listing and availability
 - Reservation form
-- Admin panel (if available)
+- Admin panel (Still in progress)
 - Responsive frontend using Bootstrap 5
 
 ## 📁 Project Structure
@@ -20,15 +20,14 @@ To run the project locally, go to:
 ## ⚙️ Requirements
 
 - PHP >= 7.x
-- Apache (via XAMPP/WAMP/Laragon)
-- MySQL (if using a database)
+- Apache (XAMPP)
+- MySQL (using a database)
 
 ## ▶️ How to Run
 
 1. Move the project folder into your web server root:
 
    - For XAMPP: `C:/xampp/htdocs/pr_reservation_voitures`
-   - For WAMP: `C:/wamp/www/pr_reservation_voitures`
 
 2. Start Apache (and MySQL if needed).
 
