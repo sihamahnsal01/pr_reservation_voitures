@@ -42,7 +42,3 @@ To run the project locally, go to:
 
 **Siham Ahnsal**  
 GitHub: [@sihamahnsal01](https://github.com/sihamahnsal01)
-
-## 📝 License
-
-This project is open source and free to use.
